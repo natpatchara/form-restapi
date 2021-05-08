@@ -1,10 +1,6 @@
 import requests
 import base64
-from PIL import Image
-from io import BytesIO
-import numpy as np
 import cv2
-import json
 
 
 def send_base64(src,oper_type,params={}):
@@ -30,7 +26,7 @@ def display_response(src,res):
   
   return res['status']
 
-test_file = "test/test7.png"
+test_file = "test/test4.png"
 res = send_base64(test_file,'Radio')
 
 # convert server response into JSON format.
