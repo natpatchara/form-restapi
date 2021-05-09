@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.8.10-slim
 
 COPY requirements.txt /requirements/requirements.txt
 RUN pip install -U pip && pip install -r requirements/requirements.txt
