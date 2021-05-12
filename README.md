@@ -22,12 +22,15 @@
    
       list of `image object` handled by API
     
-          image object   
+      <pre>
+      <b>image object</b>   
       
-          dictionary represent individual image have following keys/values pair
-     
-          'base64' : image content encoded in base64 string format
+      dictionary represent individual image 
           
+      have following keys/values pair
+     
+        'base64' : image content encoded in base64 string format
+      </pre>    
    
    * `op_type`
    
@@ -52,14 +55,18 @@
     * `results`
       
       list of `result` return from API with same order as image supplied
-      
-          `result`
-      
-          result for each image processed from API with following keys/values pairs
-      
-          type : type of operator done on image
          
-          coords: list of coordination marking area as specify by operator type (dictionary consist of x,y,w,h keys)
+      <pre>
+      <b>result</b>
+          
+      dictionary repreent result processed from API 
+          
+      have following keys/values pairs
+      
+        'type' : type of operator done on image
+         
+        'coords': list of coordination marking area as specify by operator type (dictionary consist of x,y,w,h keys)
+      </pre>
        
             
 * **Sample Call:**
